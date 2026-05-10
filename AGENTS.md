@@ -1,5 +1,9 @@
 # Auto-Wall AI Agent Guidance
 
+## General agent guidelines
+- Specification is referred by pseudo-URI: spec://[path.to.file][#header-or-anchor-id]. Path to file always relative to `spec/` folder, if omitted - use SPEC.md. Use this format when referencing specification in code, tests or chat.
+- Tests are referred by pseudo-URI: tests://[path.to.file][#test-class-or-function]. Path to file always relative to `tests/` folder. Use this format when referencing test cases in specification, code or chat.
+
 ## Project Summary
 Auto-Wall is a cross-platform Python desktop app for detecting walls and light sources in TTRPG battle maps and exporting Universal VTT data.
 
@@ -54,3 +58,4 @@ Use the repository root as the working directory.
 - Build script: `build.py`
 - Test commands: `Makefile`
 - CI workflow: `.github/workflows/build.yml`
+- Project specification: `spec/*`
